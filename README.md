@@ -1,4 +1,11 @@
 # IPFS using Data Structures 
+This C++ project implements a simplified version of the InterPlanetary File System (IPFS) using data structures such as Distributed Hash Table (DHT) for storing and retrieving files in a distributed environment. IPFS provides functionality similar to BitTorrent, making it easy to publish content and access it from anywhere, anytime.
+
+Features
+Content addressable files: Each file is represented by the hash of its content, making it easy to search and retrieve files based on their hash values.
+Geo-distributed storage: Files are stored on multiple machines distributed across the internet, managed by a Distributed Hash Table (DHT) for efficient storage and retrieval.
+Dynamic machine management: Machines responsible for storing files are mapped into the identifier space, and their responsibilities are adjusted when machines join or leave the network.
+
 IPFS provides functionality similar to BitTorrent making it extremely easy to publish your content and
 make it accessible anywhere, anytime. The obvious way to make use of IPFS is file sharing. This is
 perhaps the only use of IPFS that you are going to implement in this project, however, IPFS is capable
@@ -41,3 +48,7 @@ e1 and e2. Likewise, machine 3 is responsible for the ids e4 and e5.
 Figure 2 machine 4 will be responsible for the ids in the range e4 to e6, in case machine 3 leaves
 the network.
 • Likewise, when a new machine joins, the id range of neighbor is subdivided.
+
+
+
+Contributions to improve the IPFS implementation and add new features are welcome. Please fork the repository and submit a pull request with your changes.
